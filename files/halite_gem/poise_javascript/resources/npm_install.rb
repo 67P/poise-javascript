@@ -76,7 +76,7 @@ module PoiseJavascript
         #
         # @return [void]
         def action_install
-          cmd = [new_resource.npm_binary, 'install']
+          cmd = [new_resource.npm_binary, 'install', '--no-audit']
           cmd << '--production' if new_resource.production
           # Set --unsafe-perm unless the property is nil.
           unless new_resource.unsafe_perm.nil?

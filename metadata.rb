@@ -25,7 +25,7 @@ issues_url "https://github.com/poise/poise-javascript/issues" if defined?(issues
 license "Apache-2.0"
 depends "poise", "~> 2.0"
 depends "poise-languages", "~> 2.0"
-chef_version "< 15", ">= 12.14" if defined?(chef_version)
+chef_version ">= 12.14" if defined?(chef_version)
 supports "amazon"
 supports "arch"
 supports "centos"
